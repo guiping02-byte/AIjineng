@@ -66,25 +66,25 @@ const withBase = (path: string) => `${import.meta.env.BASE_URL.replace(/\/$/, ""
             <div class="mt-8 flex flex-wrap gap-3">
               <a
                 class="rounded-lg bg-[var(--accent)] px-5 py-3 text-sm font-semibold text-[var(--text-inverse)] shadow-sm shadow-blue-500/20 transition duration-200 hover:-translate-y-0.5 hover:bg-blue-600"
-                href={item.websiteUrl}
-                target="_blank"
-                rel="noreferrer"
-              >
-                打开官网
-              </a>
-              <a
-                class="rounded-lg border border-[var(--border-strong)] bg-white px-5 py-3 text-sm font-semibold text-[var(--text-primary)] transition duration-200 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:text-[var(--accent)]"
                 href={item.repoUrl}
                 target="_blank"
                 rel="noreferrer"
               >
                 查看仓库
               </a>
+              <a
+                class="rounded-lg border border-[var(--accent)] bg-white px-5 py-3 text-sm font-semibold text-[var(--accent)] transition duration-200 hover:-translate-y-0.5 hover:bg-blue-50"
+                href={item.websiteUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                打开官网
+              </a>
             </div>
           </div>
 
           <aside class="surface-card-strong p-6">
-            <p class="text-xs font-semibold text-[var(--text-muted)]">仓库地址</p>
+            <p class="text-xs font-semibold text-[var(--text-muted)]">下载地址</p>
             <p class="mt-3 text-2xl font-extrabold tracking-tight">{item.repo}</p>
             <p class="mt-5 border-t border-[var(--border-soft)] pt-5 text-sm leading-7 text-[var(--text-muted)]">
               {item.insight}
