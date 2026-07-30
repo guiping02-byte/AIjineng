@@ -1,0 +1,36 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout
+  title="正在前往工具库 | AI 工具导航"
+  description="仓库目录已经合并到工具库。"
+>
+  <main class="shell py-16">
+    <div class="surface-card p-6 text-center sm:p-8">
+      <p class="eyebrow">工具库</p>
+      <h1 class="mt-4 text-3xl font-extrabold tracking-tight">仓库目录已合并到工具库</h1>
+      <p class="mt-4 text-sm leading-7 text-[var(--text-muted)]">
+        页面会自动跳转。如果没有跳转，可以点击下面的按钮进入。
+      </p>
+      <a
+        class="mt-6 inline-flex rounded-lg bg-[var(--accent)] px-5 py-3 text-sm font-semibold text-[var(--text-inverse)]"
+        href="/skills/"
+      >
+        进入工具库
+      </a>
+    </div>
+  </main>
+</Layout>
+
+<script>
+  const target = new URL("/skills/", window.location.origin);
+  const params = new URLSearchParams(window.location.search);
+  const category = params.get("category");
+
+  if (category) {
+    target.searchParams.set("category", category);
+  }
+
+  window.location.replace(`${target.pathname}${target.search}`);
+</script>

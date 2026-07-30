@@ -1,0 +1,60 @@
+---
+interface Props {
+  active?: "ranking" | "skills" | "methodology";
+  repoUrl?: string;
+}
+
+const { active = "ranking", repoUrl = "https://github.com/trending?since=weekly" } = Astro.props;
+
+const navItems = [
+  { key: "ranking", label: "本周榜单", href: "/" },
+  { key: "skills", label: "工具库", href: "/skills/" }
+] as const;
+---
+
+<header class="site-header">
+  <div class="shell flex min-h-16 flex-wrap items-center justify-between gap-3 py-3 md:flex-nowrap md:gap-6 md:py-0">
+    <a class="flex min-w-0 items-center gap-3" href="/">
+      <img
+        src="/logo.png"
+        alt="AI 工具库"
+        class="h-9 w-9 shrink-0 rounded-lg border border-[var(--border-soft)] bg-white object-cover shadow-sm"
+        loading="eager"
+      />
+      <span class="min-w-0">
+        <span class="block truncate text-sm font-extrabold text-[var(--text-primary)] sm:text-base">
+          AI 工具库
+        </span>
+        <span class="hidden text-xs text-[var(--text-muted)] sm:block">给新手看的 AI 工具导航</span>
+      </span>
+    </a>
+
+    <nav class="order-3 flex w-full items-center gap-1 rounded-xl border border-[var(--border-soft)] bg-[#f5f8ff] p-1 text-sm font-extrabold md:order-none md:w-auto" aria-label="主导航">
+      {navItems.map((item) => (
+        <a
+          class:list={["site-nav-link", active === item.key && "site-nav-link-active"]}
+          href={item.href}
+          aria-current={active === item.key ? "page" : undefined}
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+
+    <div class="hidden items-center gap-4 text-xs font-semibold text-[var(--text-muted)] sm:flex">
+      <span class="inline-flex items-center gap-2">
+        <span class="h-2 w-2 rounded-full bg-[var(--accent)]"></span>
+        内容已更新
+      </span>
+      <a
+        class="flex h-9 w-9 items-center justify-center rounded-lg border border-[var(--border-soft)] bg-white text-[var(--text-primary)] transition duration-200 hover:-translate-y-0.5 hover:border-[var(--border-strong)] hover:text-[var(--accent)]"
+        href={repoUrl}
+        aria-label="打开开源仓库"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <span aria-hidden="true">源</span>
+      </a>
+    </div>
+  </div>
+</header>

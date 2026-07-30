@@ -1,0 +1,248 @@
+---
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteFooter from "../../components/SiteFooter.astro";
+import ToolAvatar from "../../components/ToolAvatar.astro";
+import { libraryCategories, libraryCategoryDescriptions, rankings } from "../../data/rankings";
+import Layout from "../../layouts/Layout.astro";
+
+const libraryCategoryCounts = Object.fromEntries(
+  libraryCategories.map((category) => [
+    category,
+    category === "全部"
+      ? rankings.length
+      : rankings.filter((item) => item.libraryCategory === category).length
+  ])
+);
+const featuredCount = rankings.filter((item) => item.featured).length;
+---
+
+<Layout
+  title="工具库 | AI 工具导航"
+  description="按用途和关键词筛选 AI 工具与开源项目。"
+>
+  <SiteHeader active="skills" repoUrl={rankings[0]?.repoUrl} />
+
+  <main class="pb-16 pt-12 sm:pb-24 sm:pt-16">
+    <section id="tool-library" class="shell">
+      <div class="surface-card px-5 py-8 sm:px-7 sm:py-10">
+        <div>
+          <div>
+            <p class="eyebrow">工具库</p>
+            <h1 class="mt-4 text-4xl font-extrabold tracking-tight text-[var(--text-primary)] md:text-5xl">
+              AI 工具库
+            </h1>
+            <p class="mt-4 max-w-2xl text-sm leading-7 text-[var(--text-muted)]">
+              当前收录 {rankings.length} 个工具，其中 {featuredCount} 个是优先推荐。你可以按用途分类或关键词筛选。
+            </p>
+
+            <div class="mt-10 flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+              <div class="min-w-0">
+                <h2 class="text-2xl font-extrabold tracking-tight">按用途筛选</h2>
+                <p class="mt-2 text-sm font-semibold text-[var(--text-muted)]">{rankings.length} 个工具</p>
+              </div>
+              <label class="flex w-full min-w-0 items-center gap-3 rounded-lg border border-[var(--border-soft)] bg-white px-4 py-3 md:max-w-md md:flex-1 lg:max-w-lg">
+                <span class="text-lg text-[var(--accent)]" aria-hidden="true">⌕</span>
+                <input
+                  type="search"
+                  class="min-w-0 flex-1 bg-transparent text-sm font-semibold text-[var(--text-primary)] outline-none placeholder:text-[var(--text-muted)]"
+                  placeholder="搜索工具名、简介或标签"
+                  data-tool-search-input
+                />
+              </label>
+            </div>
+
+            <div class="mt-5 flex flex-wrap gap-x-6 gap-y-3 border-b border-[var(--border-soft)] pb-4">
+              {libraryCategories.map((category, index) => (
+                <button
+                  type="button"
+                  class:list={["library-tab", index === 0 && "library-tab-active"]}
+                  data-tool-category-button
+                  data-tool-category-value={category}
+                  aria-pressed={index === 0 ? "true" : "false"}
+                >
+                  {category} {libraryCategoryCounts[category]}
+                </button>
+              ))}
+            </div>
+
+            <div class="mt-4">
+              {libraryCategories
+                .filter((category) => category !== "全部" && libraryCategoryDescriptions[category])
+                .map((category) => (
+                  <div
+                    class="hidden rounded-xl border border-blue-100 bg-blue-50/50 px-4 py-3 text-sm leading-7 text-[var(--text-muted)]"
+                    data-tool-category-intro
+                    data-tool-category-intro-value={category}
+                  >
+                    <span class="mr-2 font-bold text-[var(--accent)]">{category}</span>
+                    <span>{libraryCategoryDescriptions[category]}</span>
+                  </div>
+                ))}
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-3" data-tool-library-list>
+          {rankings.map((item) => (
+            <a
+              class="group flex min-h-[270px] flex-col rounded-xl border border-[var(--border-soft)] bg-white p-5 shadow-sm shadow-blue-950/5 transition duration-200 hover:-translate-y-0.5 hover:border-[var(--border-strong)] hover:shadow-lg hover:shadow-blue-950/10"
+              href={`/projects/${item.slug}/`}
+              data-tool-card
+              data-tool-category={item.libraryCategory}
+              data-tool-search={[
+                item.name,
+                item.repo,
+                item.description,
+                item.category,
+                item.libraryCategory,
+                item.sourceType,
+                ...item.platforms,
+                ...item.tags
+              ].join(" ").toLowerCase()}
+            >
+              <div class="flex min-w-0 items-start justify-between gap-4">
+                <div class="flex min-w-0 items-center gap-3">
+                  <ToolAvatar name={item.name} avatarUrl={item.avatarUrl} class="h-11 w-11" />
+                  <div class="min-w-0">
+                    <h3 class="truncate text-base font-extrabold tracking-tight">{item.name}</h3>
+                    <p class="mono mt-1 truncate text-[11px] text-[var(--text-muted)]">{item.repo}</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-5 flex-1">
+                <div class="flex flex-wrap gap-2">
+                  <span class="rounded-md bg-[var(--accent-soft)] px-2.5 py-1 text-xs font-bold text-[var(--accent)]">
+                    {item.libraryCategory}
+                  </span>
+                </div>
+                <p class="mt-4 line-clamp-3 text-sm leading-7 text-[var(--text-muted)]">{item.description}</p>
+                <div class="mt-3 flex flex-wrap gap-2">
+                  {item.tags.slice(0, 4).map((tag) => (
+                    <span class="rounded-md bg-[#f5f8ff] px-2.5 py-1 text-[11px] font-bold text-slate-700">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div class="mt-5 grid grid-cols-[1fr_1fr_auto] items-end gap-3 text-sm">
+                <div>
+                  <p class="text-xs font-semibold text-[var(--text-muted)]">收藏</p>
+                  <p class="mt-1 font-extrabold">{item.totalStars}</p>
+                </div>
+                <div>
+                  <p class="text-xs font-semibold text-[var(--text-muted)]">安装方式</p>
+                  <p class="mt-1 font-extrabold">{item.installPathCount} 种</p>
+                  <p class="mt-1 text-xs text-[var(--text-muted)]">核验于 {item.reviewedAt}</p>
+                </div>
+                <span class="flex h-10 w-10 items-center justify-center rounded-lg border border-[var(--border-soft)] bg-[#f5f8ff] text-lg text-[var(--accent)] transition duration-200 group-hover:translate-x-1 group-hover:border-[var(--border-strong)] group-hover:bg-[var(--accent)] group-hover:text-white">
+                  →
+                </span>
+              </div>
+            </a>
+          ))}
+
+          <div class="hidden rounded-xl border border-[var(--border-soft)] bg-white px-5 py-10 text-center sm:col-span-2 xl:col-span-3" data-tool-empty-state>
+            <h3 class="mt-3 text-2xl font-extrabold tracking-tight">当前条件下没有工具</h3>
+            <p class="mt-3 text-sm leading-7 text-[var(--text-muted)]">
+              可以切回 `全部`，或者换一个搜索词继续找。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <SiteFooter />
+</Layout>
+
+<script>
+  const toolCategoryButtons = Array.from(document.querySelectorAll("[data-tool-category-button]"));
+  const toolCards = Array.from(document.querySelectorAll("[data-tool-card]"));
+  const toolCategoryIntros = Array.from(document.querySelectorAll("[data-tool-category-intro]"));
+  const toolSearchInput = document.querySelector("[data-tool-search-input]");
+  const toolEmptyState = document.querySelector("[data-tool-empty-state]");
+
+  const params = new URLSearchParams(window.location.search);
+  const toolLibraryState = {
+    category: params.get("category") || "全部",
+    query: ""
+  };
+
+  const setActiveToolButtons = (buttons, activeValue, dataKey) => {
+    buttons.forEach((button) => {
+      const isActive = button.dataset[dataKey] === activeValue;
+      button.classList.toggle("library-tab-active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+  };
+
+  const matchesToolLibraryState = (card) => {
+    const matchesCategory =
+      toolLibraryState.category === "全部" || card.dataset.toolCategory === toolLibraryState.category;
+    const matchesQuery =
+      !toolLibraryState.query ||
+      (card.dataset.toolSearch || "").includes(toolLibraryState.query.toLowerCase());
+
+    return matchesCategory && matchesQuery;
+  };
+
+  const applyToolLibraryFilter = () => {
+    const validCategory = toolCategoryButtons.some(
+      (button) => button.dataset.toolCategoryValue === toolLibraryState.category
+    );
+
+    if (!validCategory) {
+      toolLibraryState.category = "全部";
+    }
+
+    setActiveToolButtons(toolCategoryButtons, toolLibraryState.category, "toolCategoryValue");
+
+    const visibleCards = toolCards.filter(matchesToolLibraryState);
+
+    toolCards.forEach((card) => {
+      card.classList.toggle("hidden", !matchesToolLibraryState(card));
+    });
+
+    toolCategoryIntros.forEach((intro) => {
+      intro.classList.toggle(
+        "hidden",
+        intro.dataset.toolCategoryIntroValue !== toolLibraryState.category
+      );
+    });
+
+    if (toolEmptyState) {
+      toolEmptyState.classList.toggle("hidden", visibleCards.length > 0);
+    }
+  };
+
+  const syncToolUrl = () => {
+    const url = new URL(window.location.href);
+
+    if (toolLibraryState.category === "全部") {
+      url.searchParams.delete("category");
+    } else {
+      url.searchParams.set("category", toolLibraryState.category);
+    }
+
+    history.replaceState({}, "", `${url.pathname}${url.search}`);
+  };
+
+  toolCategoryButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      toolLibraryState.category = button.dataset.toolCategoryValue || "全部";
+      applyToolLibraryFilter();
+      syncToolUrl();
+    });
+  });
+
+  if (toolSearchInput instanceof HTMLInputElement) {
+    toolSearchInput.addEventListener("input", () => {
+      toolLibraryState.query = toolSearchInput.value.trim();
+      applyToolLibraryFilter();
+    });
+  }
+
+  applyToolLibraryFilter();
+</script>

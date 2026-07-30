@@ -1,0 +1,651 @@
+[
+  {
+    "rank": 1,
+    "slug": "op7418-guizang-ppt-skill",
+    "name": "guizang-ppt-skill",
+    "repo": "op7418/guizang-ppt-skill",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/13505770?v=4",
+    "description": "一个适合做高完成度 HTML 幻灯片的 PPT 技能包，内置杂志风、瑞士风版式，以及配图提示词、封面生成和轻量演示运行方案。",
+    "category": "AI 技能",
+    "libraryCategory": "ppt/html",
+    "collectionStatus": "候选观察",
+    "verificationStatus": "社区验证",
+    "sourceType": "GitHub Star List",
+    "platforms": [
+      "GitHub",
+      "HTML"
+    ],
+    "installPathCount": 1,
+    "collectedAt": "2026-07-20",
+    "reviewedAt": "2026-07-30",
+    "tags": [
+      "AI 智能体",
+      "Claude Code",
+      "Codex",
+      "HTML 幻灯片",
+      "图片生成",
+      "PPT",
+      "GitHub 星标"
+    ],
+    "weeklyGrowth": "+0",
+    "totalStars": "22.7k",
+    "score": "85 / 100",
+    "featured": false,
+    "insight": "这是一套偏成品输出的 PPT 技能包，适合放进候选观察，后续再补充实测截图和实际使用体验。",
+    "websiteUrl": "https://github.com/op7418/guizang-ppt-skill",
+    "repoUrl": "https://github.com/op7418/guizang-ppt-skill",
+    "highlights": [
+      "重点不是单一模板，而是一整套适合做 HTML 幻灯片的版式和生成思路。",
+      "覆盖杂志风、瑞士风、封面图和配图提示词，比较适合做观感完整的演示内容。",
+      "既能配合 Claude Code、Codex 使用，也适合后续整理成中文教程和案例库。"
+    ],
+    "useCases": [
+      "想快速做出比普通模板更有设计感的 HTML 幻灯片页面。",
+      "需要给新手整理一套可直接参考的 PPT 提示词、封面和排版思路。",
+      "准备把 AI 生成演示稿、社交封面和页面素材串成一套工作流。"
+    ],
+    "limitations": [
+      "目前更偏技能包和提示词集合，不是开箱即用的传统 PPT 软件。",
+      "如果完全没有 HTML 幻灯片或 AI 工作流基础，上手时可能还需要配合示例慢慢理解。"
+    ],
+    "alternatives": [
+      "ppt-master",
+      "baoyu-skills",
+      "frontend-slides"
+    ]
+  },
+  {
+    "rank": 2,
+    "slug": "hugohe3-ppt-master",
+    "name": "ppt-master",
+    "repo": "hugohe3/ppt-master",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/188330578?v=4",
+    "description": "把文档或主题自动生成真正可编辑的原生 PowerPoint 演示稿，支持原生形状、转场和动画，并能按需生成带数据支撑的图表、表格、演讲者备注配音，还可以套用自己的 .pptx 模板。作者：Hugo He",
+    "category": "AI 技能",
+    "libraryCategory": "ppt/html",
+    "collectionStatus": "候选观察",
+    "verificationStatus": "社区验证",
+    "sourceType": "GitHub Star List",
+    "platforms": [
+      "GitHub",
+      "Python"
+    ],
+    "installPathCount": 1,
+    "collectedAt": "2026-07-20",
+    "reviewedAt": "2026-07-30",
+    "tags": [
+      "AI 智能体",
+      "AI PPT",
+      "Office",
+      "PowerPoint",
+      "PPT 生成",
+      "PPT",
+      "GitHub 星标"
+    ],
+    "weeklyGrowth": "+0",
+    "totalStars": "41.8k",
+    "score": "86 / 100",
+    "featured": false,
+    "insight": "这是从你的 GitHub 星标同步进来的 PPT 相关项目，适合先放入候选观察，再逐步补充实测结论。",
+    "websiteUrl": "https://hugohe3.github.io/ppt-master/",
+    "repoUrl": "https://github.com/hugohe3/ppt-master",
+    "highlights": [
+      "来自你的 GitHub 星标，方便把平时收藏的 PPT 工具沉淀到站内。",
+      "已自动归入 PPT 分类，可以在工具库里用分类和搜索快速找到。",
+      "保留 GitHub 仓库链接，后续可以继续补充中文教程、适用人群和示例。"
+    ],
+    "useCases": [
+      "想把 GitHub 上收藏的 PPT 技巧、模板或自动化工具集中管理。",
+      "需要给刚入门 AI 的同事快速找到可试用的 PPT 相关工具。",
+      "准备后续把高价值仓库整理成中文教程或工作流卡片。"
+    ],
+    "limitations": [
+      "当前同步依据仓库名称、描述和 topic 关键词判断，可能需要人工二次确认。",
+      "GitHub 星标只能说明你收藏过，不代表已经完成深度实测。"
+    ],
+    "alternatives": [
+      "guizang-ppt-skill",
+      "baoyu-skills",
+      "frontend-slides"
+    ]
+  },
+  {
+    "rank": 3,
+    "slug": "jimliu-baoyu-skills",
+    "name": "baoyu-skills",
+    "repo": "JimLiu/baoyu-skills",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/648674?v=4",
+    "description": "Baoyu 的 AI Agent 技能合集，其中 baoyu-slide-deck 可以从文章或大纲生成专业幻灯片图片，并自动合并为 PPTX 和 PDF，适合把内容生产流程沉淀成可复用技能。",
+    "category": "AI 技能",
+    "libraryCategory": "ppt/html",
+    "collectionStatus": "候选观察",
+    "verificationStatus": "社区验证",
+    "sourceType": "GitHub Star List",
+    "platforms": [
+      "GitHub",
+      "TypeScript"
+    ],
+    "installPathCount": 1,
+    "collectedAt": "2026-07-21",
+    "reviewedAt": "2026-07-30",
+    "tags": [
+      "Agent 技能",
+      "Claude 技能",
+      "Codex 技能",
+      "幻灯片生成",
+      "PPTX 导出",
+      "PPT",
+      "GitHub 星标"
+    ],
+    "weeklyGrowth": "+0",
+    "totalStars": "24.3k",
+    "score": "86 / 100",
+    "featured": false,
+    "insight": "这个仓库不是单一 PPT 工具，而是一组可安装的 Agent 技能；其中 baoyu-slide-deck 正好补上从内容生成幻灯片并导出 PPTX/PDF 的场景。",
+    "websiteUrl": "https://github.com/JimLiu/baoyu-skills",
+    "repoUrl": "https://github.com/JimLiu/baoyu-skills",
+    "highlights": [
+      "包含 baoyu-slide-deck，可以先生成完整大纲，再逐页生成幻灯片图片。",
+      "支持设置风格、受众、页数和语言，适合把同一份内容改造成不同演示版本。",
+      "最终可合并为 PPTX 和 PDF 文件，便于分享、归档或二次编辑。"
+    ],
+    "useCases": [
+      "把文章、提纲或内部材料快速转成一套可分享的幻灯片。",
+      "给团队沉淀多种风格的 AI 幻灯片生成流程。",
+      "在内容运营、培训课件或内部分享中批量生成 PPTX/PDF 初稿。"
+    ],
+    "limitations": [
+      "这是技能合集，不是单一开箱即用的 PPT 软件，需要按需安装并调用 baoyu-slide-deck。",
+      "生成质量依赖输入内容、风格参数和图像生成能力，正式交付前仍建议人工校对。"
+    ],
+    "alternatives": [
+      "guizang-ppt-skill",
+      "ppt-master",
+      "frontend-slides"
+    ]
+  },
+  {
+    "rank": 4,
+    "slug": "zarazhangrui-frontend-slides",
+    "name": "frontend-slides",
+    "repo": "zarazhangrui/frontend-slides",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/153693696?v=4",
+    "description": "借助编程智能体的前端开发能力，在网页中创建视觉效果更好的幻灯片，适合把演示稿做成可预览、可迭代的前端页面。",
+    "category": "AI 技能",
+    "libraryCategory": "ppt/html",
+    "collectionStatus": "候选观察",
+    "verificationStatus": "社区验证",
+    "sourceType": "GitHub Star List",
+    "platforms": [
+      "GitHub",
+      "JavaScript"
+    ],
+    "installPathCount": 1,
+    "collectedAt": "2026-07-21",
+    "reviewedAt": "2026-07-30",
+    "tags": [
+      "AI 幻灯片",
+      "Anthropic",
+      "Claude",
+      "Claude Code",
+      "Claude 技能",
+      "PPT",
+      "GitHub 星标"
+    ],
+    "weeklyGrowth": "+0",
+    "totalStars": "26.6k",
+    "score": "86 / 100",
+    "featured": false,
+    "insight": "这是从你的 GitHub 星标同步进来的 PPT 相关项目，适合先放入候选观察，再逐步补充实测结论。",
+    "websiteUrl": "https://github.com/zarazhangrui/frontend-slides",
+    "repoUrl": "https://github.com/zarazhangrui/frontend-slides",
+    "highlights": [
+      "来自你的 GitHub 星标，方便把平时收藏的 PPT 工具沉淀到站内。",
+      "已自动归入 PPT 分类，可以在工具库里用分类和搜索快速找到。",
+      "保留 GitHub 仓库链接，后续可以继续补充中文教程、适用人群和示例。"
+    ],
+    "useCases": [
+      "想把 GitHub 上收藏的 PPT 技巧、模板或自动化工具集中管理。",
+      "需要给刚入门 AI 的同事快速找到可试用的 PPT 相关工具。",
+      "准备后续把高价值仓库整理成中文教程或工作流卡片。"
+    ],
+    "limitations": [
+      "当前同步依据仓库名称、描述和 topic 关键词判断，可能需要人工二次确认。",
+      "GitHub 星标只能说明你收藏过，不代表已经完成深度实测。"
+    ],
+    "alternatives": [
+      "guizang-ppt-skill",
+      "ppt-master",
+      "baoyu-skills"
+    ]
+  },
+  {
+    "rank": 5,
+    "slug": "op7418-humanizer-zh",
+    "name": "Humanizer-zh",
+    "repo": "op7418/Humanizer-zh",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/13505770?v=4",
+    "description": "Humanizer 的汉化版本，Claude Code Skills，旨在消除文本中 AI 生成的痕迹。",
+    "category": "AI 技能",
+    "libraryCategory": "内容创作",
+    "collectionStatus": "候选观察",
+    "verificationStatus": "社区验证",
+    "sourceType": "GitHub Star List",
+    "platforms": [
+      "GitHub"
+    ],
+    "installPathCount": 1,
+    "collectedAt": "2026-07-30",
+    "reviewedAt": "2026-07-30",
+    "tags": [
+      "内容创作",
+      "GitHub 星标"
+    ],
+    "weeklyGrowth": "+0",
+    "totalStars": "14.2k",
+    "score": "85 / 100",
+    "featured": false,
+    "insight": "这是从你的 GitHub「内容创作」收藏列表同步进来的项目，可以先作为候选沉淀，再逐步补充实测结论。",
+    "websiteUrl": "https://github.com/op7418/Humanizer-zh",
+    "repoUrl": "https://github.com/op7418/Humanizer-zh",
+    "highlights": [
+      "来自你的 GitHub「内容创作」列表，网页分类会和 GitHub 收藏分类保持一致。",
+      "保留 GitHub 仓库链接，方便后续回到源码、文档或示例继续查看。",
+      "同步时会补齐星标数、语言和仓库头像，减少手工维护成本。"
+    ],
+    "useCases": [
+      "想把 GitHub 上收藏的 AI 工具按原有列表沉淀到站内。",
+      "需要给同事展示自己筛过的一组仓库，而不是临时翻 GitHub 收藏夹。",
+      "准备后续把高价值仓库整理成中文教程、工作流卡片或工具说明。"
+    ],
+    "limitations": [
+      "当前同步只能读取 GitHub 公开可访问的 Star Lists，私有或未公开列表需要登录态支持。",
+      "GitHub 星标只能说明你收藏过，不代表已经完成深度实测。"
+    ],
+    "alternatives": [
+      "guizang-ppt-skill",
+      "ppt-master",
+      "baoyu-skills"
+    ]
+  },
+  {
+    "rank": 6,
+    "slug": "kkkkhazix-khazix-skills",
+    "name": "khazix-skills",
+    "repo": "KKKKhazix/khazix-skills",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/239590580?v=4",
+    "description": "数字生命卡兹克开源的 AI Skills 合集 | Agent Skills: leader（帮你定义目标）, neat-freak 洁癖, hv-analysis, khazix-writer & more — Claude Code, Codex & 40+ agents",
+    "category": "AI 技能",
+    "libraryCategory": "内容创作",
+    "collectionStatus": "候选观察",
+    "verificationStatus": "社区验证",
+    "sourceType": "GitHub Star List",
+    "platforms": [
+      "GitHub",
+      "Python"
+    ],
+    "installPathCount": 1,
+    "collectedAt": "2026-07-30",
+    "reviewedAt": "2026-07-30",
+    "tags": [
+      "agent-skills",
+      "ai-agents",
+      "claude",
+      "claude-code",
+      "codex",
+      "内容创作",
+      "GitHub 星标"
+    ],
+    "weeklyGrowth": "+0",
+    "totalStars": "18.7k",
+    "score": "85 / 100",
+    "featured": false,
+    "insight": "这是从你的 GitHub「内容创作」收藏列表同步进来的项目，可以先作为候选沉淀，再逐步补充实测结论。",
+    "websiteUrl": "https://github.com/KKKKhazix/khazix-skills",
+    "repoUrl": "https://github.com/KKKKhazix/khazix-skills",
+    "highlights": [
+      "来自你的 GitHub「内容创作」列表，网页分类会和 GitHub 收藏分类保持一致。",
+      "保留 GitHub 仓库链接，方便后续回到源码、文档或示例继续查看。",
+      "同步时会补齐星标数、语言和仓库头像，减少手工维护成本。"
+    ],
+    "useCases": [
+      "想把 GitHub 上收藏的 AI 工具按原有列表沉淀到站内。",
+      "需要给同事展示自己筛过的一组仓库，而不是临时翻 GitHub 收藏夹。",
+      "准备后续把高价值仓库整理成中文教程、工作流卡片或工具说明。"
+    ],
+    "limitations": [
+      "当前同步只能读取 GitHub 公开可访问的 Star Lists，私有或未公开列表需要登录态支持。",
+      "GitHub 星标只能说明你收藏过，不代表已经完成深度实测。"
+    ],
+    "alternatives": [
+      "guizang-ppt-skill",
+      "ppt-master",
+      "baoyu-skills"
+    ]
+  },
+  {
+    "rank": 7,
+    "slug": "doocs-md",
+    "name": "md",
+    "repo": "doocs/md",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/43716716?v=4",
+    "description": "✍ WeChat Markdown Editor | 一款高度简洁的微信 Markdown 编辑器：支持 Markdown 语法、自定义主题样式、内容管理、多图床、AI 助手等特性",
+    "category": "AI 技能",
+    "libraryCategory": "内容创作",
+    "collectionStatus": "候选观察",
+    "verificationStatus": "社区验证",
+    "sourceType": "GitHub Star List",
+    "platforms": [
+      "GitHub",
+      "TypeScript"
+    ],
+    "installPathCount": 1,
+    "collectedAt": "2026-07-30",
+    "reviewedAt": "2026-07-30",
+    "tags": [
+      "ai-bot",
+      "doocs",
+      "editor",
+      "llm",
+      "markdown",
+      "内容创作",
+      "GitHub 星标"
+    ],
+    "weeklyGrowth": "+0",
+    "totalStars": "13.1k",
+    "score": "84 / 100",
+    "featured": false,
+    "insight": "这是从你的 GitHub「内容创作」收藏列表同步进来的项目，可以先作为候选沉淀，再逐步补充实测结论。",
+    "websiteUrl": "https://md.doocs.org",
+    "repoUrl": "https://github.com/doocs/md",
+    "highlights": [
+      "来自你的 GitHub「内容创作」列表，网页分类会和 GitHub 收藏分类保持一致。",
+      "保留 GitHub 仓库链接，方便后续回到源码、文档或示例继续查看。",
+      "同步时会补齐星标数、语言和仓库头像，减少手工维护成本。"
+    ],
+    "useCases": [
+      "想把 GitHub 上收藏的 AI 工具按原有列表沉淀到站内。",
+      "需要给同事展示自己筛过的一组仓库，而不是临时翻 GitHub 收藏夹。",
+      "准备后续把高价值仓库整理成中文教程、工作流卡片或工具说明。"
+    ],
+    "limitations": [
+      "当前同步只能读取 GitHub 公开可访问的 Star Lists，私有或未公开列表需要登录态支持。",
+      "GitHub 星标只能说明你收藏过，不代表已经完成深度实测。"
+    ],
+    "alternatives": [
+      "guizang-ppt-skill",
+      "ppt-master",
+      "baoyu-skills"
+    ]
+  },
+  {
+    "rank": 8,
+    "slug": "isjiamu-gzh-design-skill",
+    "name": "gzh-design-skill",
+    "repo": "isjiamu/gzh-design-skill",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/30619280?v=4",
+    "description": "把 Markdown 一键排成可直接粘进公众号编辑器的精致 HTML —— 6 套精选主题 + 主题生成器 + 双关卡校验。An AI-agent skill that turns Markdown into paste-ready WeChat article HTML.",
+    "category": "AI 技能",
+    "libraryCategory": "内容创作",
+    "collectionStatus": "候选观察",
+    "verificationStatus": "社区验证",
+    "sourceType": "GitHub Star List",
+    "platforms": [
+      "GitHub",
+      "HTML"
+    ],
+    "installPathCount": 1,
+    "collectedAt": "2026-07-30",
+    "reviewedAt": "2026-07-30",
+    "tags": [
+      "agent-skill",
+      "ai-agent",
+      "claude-code",
+      "codex",
+      "cursor",
+      "内容创作",
+      "GitHub 星标"
+    ],
+    "weeklyGrowth": "+0",
+    "totalStars": "2.6k",
+    "score": "82 / 100",
+    "featured": false,
+    "insight": "这是从你的 GitHub「内容创作」收藏列表同步进来的项目，可以先作为候选沉淀，再逐步补充实测结论。",
+    "websiteUrl": "https://github.com/AlephMuYe",
+    "repoUrl": "https://github.com/isjiamu/gzh-design-skill",
+    "highlights": [
+      "来自你的 GitHub「内容创作」列表，网页分类会和 GitHub 收藏分类保持一致。",
+      "保留 GitHub 仓库链接，方便后续回到源码、文档或示例继续查看。",
+      "同步时会补齐星标数、语言和仓库头像，减少手工维护成本。"
+    ],
+    "useCases": [
+      "想把 GitHub 上收藏的 AI 工具按原有列表沉淀到站内。",
+      "需要给同事展示自己筛过的一组仓库，而不是临时翻 GitHub 收藏夹。",
+      "准备后续把高价值仓库整理成中文教程、工作流卡片或工具说明。"
+    ],
+    "limitations": [
+      "当前同步只能读取 GitHub 公开可访问的 Star Lists，私有或未公开列表需要登录态支持。",
+      "GitHub 星标只能说明你收藏过，不代表已经完成深度实测。"
+    ],
+    "alternatives": [
+      "guizang-ppt-skill",
+      "ppt-master",
+      "baoyu-skills"
+    ]
+  },
+  {
+    "rank": 9,
+    "slug": "zhongerxin-cowart",
+    "name": "Cowart",
+    "repo": "zhongerxin/Cowart",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/8215057?v=4",
+    "description": "从你的 GitHub「内容创作」列表同步进来的工具，适合后续补充中文说明和使用场景。",
+    "category": "AI 技能",
+    "libraryCategory": "内容创作",
+    "collectionStatus": "候选观察",
+    "verificationStatus": "社区验证",
+    "sourceType": "GitHub Star List",
+    "platforms": [
+      "GitHub",
+      "JavaScript"
+    ],
+    "installPathCount": 1,
+    "collectedAt": "2026-07-30",
+    "reviewedAt": "2026-07-30",
+    "tags": [
+      "内容创作",
+      "GitHub 星标"
+    ],
+    "weeklyGrowth": "+0",
+    "totalStars": "5.1k",
+    "score": "83 / 100",
+    "featured": false,
+    "insight": "这是从你的 GitHub「内容创作」收藏列表同步进来的项目，可以先作为候选沉淀，再逐步补充实测结论。",
+    "websiteUrl": "https://github.com/zhongerxin/Cowart",
+    "repoUrl": "https://github.com/zhongerxin/Cowart",
+    "highlights": [
+      "来自你的 GitHub「内容创作」列表，网页分类会和 GitHub 收藏分类保持一致。",
+      "保留 GitHub 仓库链接，方便后续回到源码、文档或示例继续查看。",
+      "同步时会补齐星标数、语言和仓库头像，减少手工维护成本。"
+    ],
+    "useCases": [
+      "想把 GitHub 上收藏的 AI 工具按原有列表沉淀到站内。",
+      "需要给同事展示自己筛过的一组仓库，而不是临时翻 GitHub 收藏夹。",
+      "准备后续把高价值仓库整理成中文教程、工作流卡片或工具说明。"
+    ],
+    "limitations": [
+      "当前同步只能读取 GitHub 公开可访问的 Star Lists，私有或未公开列表需要登录态支持。",
+      "GitHub 星标只能说明你收藏过，不代表已经完成深度实测。"
+    ],
+    "alternatives": [
+      "guizang-ppt-skill",
+      "ppt-master",
+      "baoyu-skills"
+    ]
+  },
+  {
+    "rank": 10,
+    "slug": "farion1231-cc-switch",
+    "name": "cc-switch",
+    "repo": "farion1231/cc-switch",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/44939412?v=4",
+    "description": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io",
+    "category": "AI 应用",
+    "libraryCategory": "应用",
+    "collectionStatus": "候选观察",
+    "verificationStatus": "社区验证",
+    "sourceType": "GitHub Star List",
+    "platforms": [
+      "GitHub",
+      "Rust"
+    ],
+    "installPathCount": 1,
+    "collectedAt": "2026-07-30",
+    "reviewedAt": "2026-07-30",
+    "tags": [
+      "ai-tools",
+      "claude-code",
+      "codex",
+      "desktop-app",
+      "grok",
+      "Search code, repositories, users, issues, pull requests...",
+      "GitHub 星标"
+    ],
+    "weeklyGrowth": "+0",
+    "totalStars": "122.3k",
+    "score": "88 / 100",
+    "featured": false,
+    "insight": "这是从你的 GitHub「Search code, repositories, users, issues, pull requests...」收藏列表同步进来的项目，可以先作为候选沉淀，再逐步补充实测结论。",
+    "websiteUrl": "https://ccswitch.io",
+    "repoUrl": "https://github.com/farion1231/cc-switch",
+    "highlights": [
+      "来自你的 GitHub「Search code, repositories, users, issues, pull requests...」列表，网页分类会和 GitHub 收藏分类保持一致。",
+      "保留 GitHub 仓库链接，方便后续回到源码、文档或示例继续查看。",
+      "同步时会补齐星标数、语言和仓库头像，减少手工维护成本。"
+    ],
+    "useCases": [
+      "想把 GitHub 上收藏的 AI 工具按原有列表沉淀到站内。",
+      "需要给同事展示自己筛过的一组仓库，而不是临时翻 GitHub 收藏夹。",
+      "准备后续把高价值仓库整理成中文教程、工作流卡片或工具说明。"
+    ],
+    "limitations": [
+      "当前同步只能读取 GitHub 公开可访问的 Star Lists，私有或未公开列表需要登录态支持。",
+      "GitHub 星标只能说明你收藏过，不代表已经完成深度实测。"
+    ],
+    "alternatives": [
+      "guizang-ppt-skill",
+      "ppt-master",
+      "baoyu-skills"
+    ]
+  },
+  {
+    "rank": 11,
+    "slug": "langgenius-dify",
+    "name": "dify",
+    "repo": "langgenius/dify",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/127165244?v=4",
+    "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+    "category": "AI 应用",
+    "libraryCategory": "应用",
+    "collectionStatus": "候选观察",
+    "verificationStatus": "社区验证",
+    "sourceType": "GitHub Star List",
+    "platforms": [
+      "GitHub",
+      "TypeScript"
+    ],
+    "installPathCount": 1,
+    "collectedAt": "2026-07-30",
+    "reviewedAt": "2026-07-30",
+    "tags": [
+      "agent",
+      "agentic-ai",
+      "agentic-framework",
+      "agentic-workflow",
+      "ai",
+      "Search code, repositories, users, issues, pull requests...",
+      "GitHub 星标"
+    ],
+    "weeklyGrowth": "+0",
+    "totalStars": "150.7k",
+    "score": "88 / 100",
+    "featured": false,
+    "insight": "这是从你的 GitHub「Search code, repositories, users, issues, pull requests...」收藏列表同步进来的项目，可以先作为候选沉淀，再逐步补充实测结论。",
+    "websiteUrl": "https://dify.ai",
+    "repoUrl": "https://github.com/langgenius/dify",
+    "highlights": [
+      "来自你的 GitHub「Search code, repositories, users, issues, pull requests...」列表，网页分类会和 GitHub 收藏分类保持一致。",
+      "保留 GitHub 仓库链接，方便后续回到源码、文档或示例继续查看。",
+      "同步时会补齐星标数、语言和仓库头像，减少手工维护成本。"
+    ],
+    "useCases": [
+      "想把 GitHub 上收藏的 AI 工具按原有列表沉淀到站内。",
+      "需要给同事展示自己筛过的一组仓库，而不是临时翻 GitHub 收藏夹。",
+      "准备后续把高价值仓库整理成中文教程、工作流卡片或工具说明。"
+    ],
+    "limitations": [
+      "当前同步只能读取 GitHub 公开可访问的 Star Lists，私有或未公开列表需要登录态支持。",
+      "GitHub 星标只能说明你收藏过，不代表已经完成深度实测。"
+    ],
+    "alternatives": [
+      "guizang-ppt-skill",
+      "ppt-master",
+      "baoyu-skills"
+    ]
+  },
+  {
+    "rank": 12,
+    "slug": "thysrael-horizon",
+    "name": "Horizon",
+    "repo": "Thysrael/Horizon",
+    "avatarUrl": "https://avatars.githubusercontent.com/u/72613958?v=4",
+    "description": "📡 Your own AI-powered news radar. Generates daily briefings in English & Chinese. | 用 AI 构建你专属的新闻雷达",
+    "category": "AI 应用",
+    "libraryCategory": "新闻资讯",
+    "collectionStatus": "候选观察",
+    "verificationStatus": "社区验证",
+    "sourceType": "GitHub Star List",
+    "platforms": [
+      "GitHub",
+      "Python"
+    ],
+    "installPathCount": 1,
+    "collectedAt": "2026-07-30",
+    "reviewedAt": "2026-07-30",
+    "tags": [
+      "aggregator",
+      "feishu-bot",
+      "llm",
+      "mcp",
+      "news",
+      "Search code, repositories, users, issues, pull requests...",
+      "GitHub 星标"
+    ],
+    "weeklyGrowth": "+0",
+    "totalStars": "8.5k",
+    "score": "84 / 100",
+    "featured": false,
+    "insight": "这是从你的 GitHub「Search code, repositories, users, issues, pull requests...」收藏列表同步进来的项目，可以先作为候选沉淀，再逐步补充实测结论。",
+    "websiteUrl": "https://www.horizon1123.top",
+    "repoUrl": "https://github.com/Thysrael/Horizon",
+    "highlights": [
+      "来自你的 GitHub「Search code, repositories, users, issues, pull requests...」列表，网页分类会和 GitHub 收藏分类保持一致。",
+      "保留 GitHub 仓库链接，方便后续回到源码、文档或示例继续查看。",
+      "同步时会补齐星标数、语言和仓库头像，减少手工维护成本。"
+    ],
+    "useCases": [
+      "想把 GitHub 上收藏的 AI 工具按原有列表沉淀到站内。",
+      "需要给同事展示自己筛过的一组仓库，而不是临时翻 GitHub 收藏夹。",
+      "准备后续把高价值仓库整理成中文教程、工作流卡片或工具说明。"
+    ],
+    "limitations": [
+      "当前同步只能读取 GitHub 公开可访问的 Star Lists，私有或未公开列表需要登录态支持。",
+      "GitHub 星标只能说明你收藏过，不代表已经完成深度实测。"
+    ],
+    "alternatives": [
+      "guizang-ppt-skill",
+      "ppt-master",
+      "baoyu-skills"
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+---
+interface Props {
+  name: string;
+  avatarUrl: string;
+  class?: string;
+}
+
+const { name, avatarUrl, class: className = "h-11 w-11" } = Astro.props;
+const initial = name.slice(0, 1);
+---
+
+<span class:list={["tool-avatar", className]} aria-hidden="true">
+  <img
+    src={avatarUrl}
+    alt=""
+    loading="lazy"
+    decoding="async"
+    onerror="this.hidden=true; this.nextElementSibling.hidden=false;"
+  />
+  <span hidden>{initial}</span>
+</span>

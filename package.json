@@ -1,0 +1,26 @@
+{
+  "name": "skill-market-radar",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "add:ranking": "node scripts/add-ranking.mjs",
+    "sync:github-star-lists": "node scripts/sync-github-star-lists.mjs",
+    "sync:ppt-stars": "node scripts/sync-ppt-stars.mjs",
+    "test:sync:github-star-lists": "node --test scripts/sync-github-star-lists.test.mjs",
+    "test:sync:ppt-stars": "node --test scripts/sync-ppt-stars.test.mjs",
+    "validate:data": "node scripts/validate-rankings.mjs",
+    "validate:data:links": "node scripts/validate-rankings.mjs --check-links",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.1.1",
+    "tailwindcss": "^4.3.3"
+  }
+}
