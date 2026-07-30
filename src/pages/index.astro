@@ -69,6 +69,7 @@ const methodSteps = [
     description: "保留来源、更新日期和编辑判断，方便后续复盘。"
   }
 ];
+const withBase = (path: string) => `${import.meta.env.BASE_URL.replace(/\/$/, "")}${path.startsWith("/") ? path : `/${path}`}`;
 ---
 
 <Layout
@@ -92,19 +93,19 @@ const methodSteps = [
           <div class="mt-8 flex flex-wrap gap-3">
             <a
               class="rounded-lg bg-[var(--accent)] px-5 py-3 text-sm font-semibold text-[var(--text-inverse)] shadow-sm shadow-blue-500/20 transition duration-200 hover:-translate-y-0.5 hover:bg-blue-600"
-              href="/skills/"
+              href={withBase("/skills/")}
             >
               找可用工具
             </a>
             <a
               class="rounded-lg border border-[var(--border-strong)] bg-white px-5 py-3 text-sm font-semibold text-[var(--text-primary)] transition duration-200 hover:-translate-y-0.5 hover:border-[var(--accent)] hover:text-[var(--accent)]"
-              href="/skills/"
+              href={withBase("/skills/")}
             >
               按分类筛选
             </a>
             <a
               class="rounded-lg border border-transparent px-5 py-3 text-sm font-semibold text-[var(--text-muted)] transition duration-200 hover:text-[var(--accent)]"
-              href="/methodology/"
+              href={withBase("/methodology/")}
             >
               榜单怎么算
             </a>
@@ -206,7 +207,7 @@ const methodSteps = [
             {rankings.map((item) => (
               <a
                 class="grid grid-cols-[72px_minmax(0,1fr)_110px_92px] gap-3 px-5 py-5 transition duration-200 hover:bg-[#f7fbff]"
-                href={`/projects/${item.slug}/`}
+                href={withBase(`/projects/${item.slug}/`)}
                 data-ranking-row
                 data-category={item.category}
                 data-featured={item.featured ? "true" : "false"}
@@ -263,7 +264,7 @@ const methodSteps = [
             </div>
             <a
               class="text-sm font-semibold text-[var(--accent)] transition duration-200 hover:text-blue-700"
-              href="/methodology/"
+              href={withBase("/methodology/")}
             >
               查看完整说明
             </a>

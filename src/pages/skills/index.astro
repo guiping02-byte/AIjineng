@@ -14,6 +14,7 @@ const libraryCategoryCounts = Object.fromEntries(
   ])
 );
 const featuredCount = rankings.filter((item) => item.featured).length;
+const withBase = (path: string) => `${import.meta.env.BASE_URL.replace(/\/$/, "")}${path.startsWith("/") ? path : `/${path}`}`;
 ---
 
 <Layout
@@ -86,7 +87,7 @@ const featuredCount = rankings.filter((item) => item.featured).length;
           {rankings.map((item) => (
             <a
               class="group flex min-h-[270px] flex-col rounded-xl border border-[var(--border-soft)] bg-white p-5 shadow-sm shadow-blue-950/5 transition duration-200 hover:-translate-y-0.5 hover:border-[var(--border-strong)] hover:shadow-lg hover:shadow-blue-950/10"
-              href={`/projects/${item.slug}/`}
+              href={withBase(`/projects/${item.slug}/`)}
               data-tool-card
               data-tool-category={item.libraryCategory}
               data-tool-search={[

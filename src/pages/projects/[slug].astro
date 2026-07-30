@@ -29,6 +29,7 @@ const detailStats = [
   { label: "收藏数", value: item.totalStars },
   { label: "综合评分", value: item.score }
 ];
+const withBase = (path: string) => `${import.meta.env.BASE_URL.replace(/\/$/, "")}${path.startsWith("/") ? path : `/${path}`}`;
 ---
 
 <Layout title={`${item.name} | AI 工具导航`} description={item.description}>
@@ -38,7 +39,7 @@ const detailStats = [
     <section class="shell">
       <a
         class="mono inline-flex items-center gap-2 rounded-lg border border-[var(--border-soft)] bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--text-muted)] transition duration-200 hover:-translate-y-0.5 hover:border-[var(--border-strong)] hover:text-[var(--accent)]"
-        href="/"
+        href={withBase("/")}
       >
         <span aria-hidden="true">←</span>
         返回榜单
@@ -181,7 +182,7 @@ const detailStats = [
               {alternatives.map((candidate) => (
                 <a
                   class="block rounded-xl border border-[var(--border-soft)] bg-white p-4 transition duration-200 hover:-translate-y-0.5 hover:border-[var(--border-strong)] hover:shadow-md hover:shadow-blue-950/10"
-                  href={`/projects/${candidate.slug}/`}
+                  href={withBase(`/projects/${candidate.slug}/`)}
                 >
                   <p class="mono text-[11px] uppercase tracking-[0.18em] text-[var(--text-muted)]">
                     #{candidate.rank.toString().padStart(2, "0")} · {candidate.category}
@@ -201,7 +202,7 @@ const detailStats = [
                 related.map((candidate) => (
                   <a
                     class="block rounded-xl border border-[var(--border-soft)] bg-white p-4 transition duration-200 hover:-translate-y-0.5 hover:border-[var(--border-strong)] hover:shadow-md hover:shadow-blue-950/10"
-                    href={`/projects/${candidate.slug}/`}
+                    href={withBase(`/projects/${candidate.slug}/`)}
                   >
                     <p class="mono text-[11px] uppercase tracking-[0.18em] text-[var(--text-muted)]">
                       #{candidate.rank.toString().padStart(2, "0")} · {candidate.weeklyGrowth}
